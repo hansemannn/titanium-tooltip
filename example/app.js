@@ -1,39 +1,19 @@
-// This is a test harness for your module
-// You should do something interesting in this harness
-// to test out the module and to provide instructions
-// to users on how to use it by example.
-
-
-// open a single window
 var win = Ti.UI.createWindow({
-	backgroundColor:'white'
+    backgroundColor: '#fff'
 });
-var label = Ti.UI.createLabel();
-win.add(label);
+var Tooltip = require('ti.tooltip');
+var btn = Ti.UI.createButton({ right: 10, top: 200, width: 50, height: 50, backgroundColor: '#333', title: 'Test', color: '#fff' });
+
+btn.addEventListener('click', () => {
+    Tooltip.show({
+        title: 'Hello world!',
+        bubbleColor: '#f0f0f0',
+        textColor: '#000',
+        container: win,
+        sourceView: btn,
+        direction: Tooltip.TOOLTIP_DIRECTION_LEFT
+    })
+});
+win.add(btn);
+
 win.open();
-
-// TODO: write your module tests here
-var titanium_tooltip = require('ti.tooltip');
-Ti.API.info("module is => " + titanium_tooltip);
-
-label.text = titanium_tooltip.example();
-
-Ti.API.info("module exampleProp is => " + titanium_tooltip.exampleProp);
-titanium_tooltip.exampleProp = "This is a test value";
-
-if (Ti.Platform.name == "android") {
-	var proxy = titanium_tooltip.createExample({
-		message: "Creating an example Proxy",
-		backgroundColor: "red",
-		width: 100,
-		height: 100,
-		top: 100,
-		left: 150
-	});
-
-	proxy.printMessage("Hello world!");
-	proxy.message = "Hi world!.  It's me again.";
-	proxy.printMessage("Hello world!");
-	win.add(proxy);
-}
-

@@ -6,12 +6,16 @@ var btn = Ti.UI.createButton({ right: 10, top: 200, width: 50, height: 50, backg
 
 btn.addEventListener('click', () => {
     Tooltip.show({
-        title: 'Hello world!',
-        bubbleColor: '#f0f0f0',
-        textColor: '#000',
-        container: win,
-        sourceView: btn,
-        direction: Tooltip.TOOLTIP_DIRECTION_LEFT
+        title: 'This is a dummy text line 1.This is a dummy text line 2.',
+        backgroundColor: '#61c494',
+        borderRadius: 40,
+        arrowWidth: 20,
+        arrowHeight: 24,
+        arrowMargin: 10,
+        textColor: '#fff',
+        container: $.win,
+        sourceView: $.btn,
+        direction: Tooltip.TOOLTIP_DIRECTION_UP
     })
 });
 win.add(btn);

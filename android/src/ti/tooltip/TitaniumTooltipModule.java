@@ -10,6 +10,7 @@ package ti.tooltip;
 
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.KrollDict;
+import org.appcelerator.kroll.KrollFunction;
 import org.appcelerator.kroll.annotations.Kroll;
 
 import org.appcelerator.titanium.TiApplication;
@@ -23,49 +24,67 @@ import android.graphics.Color;
 import com.github.florent37.viewtooltip.ViewTooltip;
 
 @Kroll.module(name="TitaniumTooltip", id="ti.tooltip")
-public class TitaniumTooltipModule extends KrollModule
-{
+public class TitaniumTooltipModule extends KrollModule {
 	// Standard Debugging variables
 	private static final String LCAT = "TitaniumTooltipModule";
 	private static final boolean DBG = TiConfig.LOGD;
 
-	@Kroll.constant public static final int TOOLTIP_POSITION_TOP = 0;
-	@Kroll.constant public static final int TOOLTIP_POSITION_BOTTOM = 1;
-	@Kroll.constant public static final int TOOLTIP_POSITION_LEFT = 2;
-	@Kroll.constant public static final int TOOLTIP_POSITION_RIGHT = 3;
+	@Kroll.constant public static final int TOOLTIP_DIRECTION_UP = 0;
+	@Kroll.constant public static final int TOOLTIP_DIRECTION_DOWN = 1;
+	@Kroll.constant public static final int TOOLTIP_DIRECTION_LEFT = 2;
+	@Kroll.constant public static final int TOOLTIP_DIRECTION_RIGHT = 3;
+	
+	private ViewTooltip.Position getDirection(int direction) {
+		switch (direction) {
+			case 0:
+				return ViewTooltip.Position.TOP;
+				
+			case 1:
+				return ViewTooltip.Position.BOTTOM;
+				
+			case 2:
+				return ViewTooltip.Position.LEFT;
+				
+			case 3:
+				return ViewTooltip.Position.RIGHT;
+				
+			default:
+				return ViewTooltip.Position.TOP;
+		}
+	}
 
 	@Kroll.method
-	public void show(KrollDict params)
-	{
-		TiViewProxy sourceView = (TiViewProxy)params.get("sourceView");
+	public void show(final KrollDict params) {
+		TiViewProxy sourceView = (TiViewProxy) params.get(Defaults.PARAMS_SOURCE_VIEW);
+		
+		String title = params.optString(Defaults.PARAMS_TITLE, "");
+		int padding = params.optInt(Defaults.PARAMS_PADDING, Defaults.Values.PADDING);
 
 		ViewTooltip.on(TiApplication.getInstance().getCurrentActivity(), sourceView.getOrCreateView().getNativeView())
-        
-        .clickToHide(true)
-        .padding(10, 10, 10, 10)
-        
-        .text("Hello world!")
-        
-        .textColor(Color.WHITE)
-        .color(Color.BLACK)
-        
-        .corner(10)
-
-        .arrowWidth(18)
-        .arrowHeight(10)
-
-        .distanceWithView(5)
-        
+		.text(title)
+		.textColor( Utils.getColor(params, Defaults.PARAMS_TEXT_COLOR, Defaults.Values.TEXT_COLOR) )
+        .color( Utils.getColor(params, Defaults.PARAMS_BACKGROUND_COLOR, Defaults.Values.BACKGROUND_COLOR) )
+        .corner( params.optInt(Defaults.PARAMS_BORDER_RADIUS, Defaults.Values.BORDER_RADIUS) )
+        .position( getDirection(params.optInt(Defaults.PARAMS_DIRECTION, Defaults.Values.DIRECTION)) )
+        .padding(padding, padding, padding, padding)
+        .arrowWidth( params.optInt(Defaults.PARAMS_ARROW_WIDTH, Defaults.Values.ARROW_WIDTH) )
+        .arrowHeight( params.optInt(Defaults.PARAMS_ARROW_HEIGHT, Defaults.Values.ARROW_HEIGHT) )
+        .distanceWithView( params.optInt(Defaults.PARAMS_ARROW_MARGIN, Defaults.Values.ARROW_MARGIN) )
         .onDisplay(new ViewTooltip.ListenerDisplay() {
             @Override
             public void onDisplay(View view) {
-                
+            	Log.i("", "** onDisplay **");
+//            	if (params.containsKeyAndNotNull(Defaults.CALLBACK_ON_SHOW)) {
+//	    			if (params.get(Defaults.CALLBACK_ON_SHOW) instanceof KrollFunction) {
+//	    				onShow = (KrollFunction) params.get(Defaults.CALLBACK_ON_SHOW);
+//	    			}
+//	    		}
             }
         })
         .onHide(new ViewTooltip.ListenerHide() {
             @Override
             public void onHide(View view) {
-                
+            	Log.i("", "** onHide **");
             }
         })
         .show();

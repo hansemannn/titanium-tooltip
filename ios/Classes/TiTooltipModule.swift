@@ -33,7 +33,7 @@ class TiTooltipModule: TiModule {
     guard let containerProxy = params["container"] as? TiViewProxy else { return }
     guard let boundsProxy = params["sourceView"] as? TiViewProxy else { return }
     
-    let bubbleColor = params["bubbleColor"];
+    let backgroundColor = params["backgroundColor"];
     let textColor = params["textColor"];
     let direction = params["direction"] as? Int ?? 0
     let bounce = params["bounce"] as? Float ?? 0.0
@@ -54,8 +54,8 @@ class TiTooltipModule: TiModule {
       popTip.textColor = TiUtils.colorValue(textColor)!.color
     }
 
-    if let bubbleColor = bubbleColor {
-      popTip.bubbleColor = TiUtils.colorValue(bubbleColor)!.color
+    if let backgroundColor = backgroundColor {
+      popTip.bubbleColor = TiUtils.colorValue(backgroundColor)!.color
     }
 
     if bounce > 0 {

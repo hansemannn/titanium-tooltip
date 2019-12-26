@@ -73,7 +73,6 @@ public class TitaniumTooltipModule extends KrollModule {
         .onDisplay(new ViewTooltip.ListenerDisplay() {
             @Override
             public void onDisplay(View view) {
-            	Log.i("", "** onDisplay **");
 //            	if (params.containsKeyAndNotNull(Defaults.CALLBACK_ON_SHOW)) {
 //	    			if (params.get(Defaults.CALLBACK_ON_SHOW) instanceof KrollFunction) {
 //	    				onShow = (KrollFunction) params.get(Defaults.CALLBACK_ON_SHOW);
@@ -84,8 +83,8 @@ public class TitaniumTooltipModule extends KrollModule {
         .onHide(new ViewTooltip.ListenerHide() {
             @Override
             public void onHide(View view) {
-            	Log.i("", "** onHide **");
-            }
+
+			}
         })
         .show();
 	}

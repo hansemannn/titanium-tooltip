@@ -2,8 +2,8 @@
 //  TiTooltipModule.swift
 //  titanium-tooltip
 //
-//  Created by Your Name
-//  Copyright (c) 2019 Your Company. All rights reserved.
+//  Created by Hans Knöchel
+//  Copyright (c) 2019-present Hans Knöchel. All rights reserved.
 //
 
 import UIKit
@@ -30,8 +30,7 @@ class TiTooltipModule: TiModule {
   func show(arguments: Array<Any>?) {
     guard let params = arguments?[0] as? [String: Any] else { return }
     guard let title = params["title"] as? String else { return }
-    guard let containerProxy = params["container"] as? TiViewProxy else { return }
-    guard let boundsProxy = params["sourceView"] as? TiViewProxy else { return }
+    guard let sourceViewProxy = params["sourceView"] as? TiViewProxy else { return }
     
     let backgroundColor = params["backgroundColor"];
     let textColor = params["textColor"];
@@ -43,7 +42,13 @@ class TiTooltipModule: TiModule {
 
     popTip.padding = 10.0
     popTip.offset = 5.0
+    popTip.cornerRadius = 10
+    popTip.swipeRemoveGestureDirection = [.left, .up, .right, .down]
     popTip.arrowSize = CGSize(width: 18, height: 10)
+    popTip.shadowRadius = 5
+    popTip.shadowOpacity = 0.1
+    popTip.shadowColor = UIColor.black
+    popTip.shadowOffset = CGSize(width: 0, height: 2)
 
     if shouldShowMask {
       popTip.maskColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
@@ -63,7 +68,10 @@ class TiTooltipModule: TiModule {
     }
     
     DispatchQueue.main.async {
-      popTip.show(text: title, direction: self._tooltipDirection(from: direction), maxWidth: 200, in: containerProxy.view!, from: TiUtils.viewPositionRect(boundsProxy.view))
+      let topMostView = TiApp().topMostView()!
+      let rect = sourceViewProxy.view.convert(sourceViewProxy.view.bounds, to: topMostView)
+
+      popTip.show(text: title, direction: self._tooltipDirection(from: direction), maxWidth: 200, in: topMostView, from: rect)
     }
   }
   

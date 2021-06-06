@@ -6,6 +6,7 @@ public class Defaults {
 	public static final String PARAMS_AUTO_HIDE = "autoHide";
 	public static final String PARAMS_TITLE = "title";
 	public static final String PARAMS_TEXT_COLOR = "textColor";
+	public static final String PARAMS_SHADOW_COLOR = "shadowColor";
 	public static final String PARAMS_BACKGROUND_COLOR = "backgroundColor";
 	public static final String PARAMS_BORDER_RADIUS = "borderRadius";
 	public static final String PARAMS_ARROW_WIDTH = "arrowWidth";
@@ -25,6 +26,7 @@ public class Defaults {
 		public static final int ARROW_HEIGHT = 20;
 		public static final int ARROW_MARGIN = 10;
 		public static final String TEXT_COLOR = "#000";
+		public static final String SHADOW_COLOR = "#555";
 		public static final String BACKGROUND_COLOR = "#f1f1f1";
 	}
 }

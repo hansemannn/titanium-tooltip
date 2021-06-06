@@ -16,16 +16,14 @@ public class Utils {
 	}
 	
 	public static int getColor(KrollDict options, String key, String defaultColor) {
-		int colorValue = -1;
-		
 		if (options.containsKeyAndNotNull(key)) {
 			try {
-				colorValue = TiConvert.toColor( (String) options.get(key));
+				return TiConvert.toColor( (String) options.get(key));
 			} catch(Exception exc) {
-				colorValue = TiConvert.toColor(defaultColor);
+				return TiConvert.toColor(defaultColor);
 			}			
 		}
 		
-		return colorValue;
+		return TiConvert.toColor(defaultColor);
 	}
 }

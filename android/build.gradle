@@ -1,20 +1,3 @@
-apply plugin: 'java'
-
-repositories {
-	google()
-	jcenter()
-	mavenCentral()
-}
-
 dependencies {
-    compile 'com.github.florent37:viewtooltip:1.1.8'
-}
-
-configurations.all {
-  transitive = false
-}
-
-task getDeps(type: Copy) {
-	from sourceSets.main.runtimeClasspath
-	into 'lib/'
+    implementation 'com.github.florent37:viewtooltip:1.2.2'
 }

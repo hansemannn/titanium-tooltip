@@ -18,8 +18,10 @@ import org.appcelerator.kroll.common.Log;
 import org.appcelerator.kroll.common.TiConfig;
 import org.appcelerator.titanium.proxy.TiViewProxy;
 
+import android.app.Activity;
 import android.view.View;
 import android.graphics.Color;
+import android.view.ViewGroup;
 
 import com.github.florent37.viewtooltip.ViewTooltip;
 
@@ -62,31 +64,24 @@ public class TitaniumTooltipModule extends KrollModule {
 
 		ViewTooltip.on(TiApplication.getInstance().getCurrentActivity(), sourceView.getOrCreateView().getNativeView())
 		.text(title)
+		.clickToHide(true)
+		.autoHide(false, 2000)
 		.textColor( Utils.getColor(params, Defaults.PARAMS_TEXT_COLOR, Defaults.Values.TEXT_COLOR) )
+		.withShadow(false)
         .color( Utils.getColor(params, Defaults.PARAMS_BACKGROUND_COLOR, Defaults.Values.BACKGROUND_COLOR) )
-        .corner( params.optInt(Defaults.PARAMS_BORDER_RADIUS, Defaults.Values.BORDER_RADIUS) )
+        .border(Color.LTGRAY, 1)
         .position( getDirection(params.optInt(Defaults.PARAMS_DIRECTION, Defaults.Values.DIRECTION)) )
         .padding(padding, padding, padding, padding)
         .arrowWidth( params.optInt(Defaults.PARAMS_ARROW_WIDTH, Defaults.Values.ARROW_WIDTH) )
         .arrowHeight( params.optInt(Defaults.PARAMS_ARROW_HEIGHT, Defaults.Values.ARROW_HEIGHT) )
         .distanceWithView( params.optInt(Defaults.PARAMS_ARROW_MARGIN, Defaults.Values.ARROW_MARGIN) )
-        .onDisplay(new ViewTooltip.ListenerDisplay() {
-            @Override
-            public void onDisplay(View view) {
-//            	if (params.containsKeyAndNotNull(Defaults.CALLBACK_ON_SHOW)) {
-//	    			if (params.get(Defaults.CALLBACK_ON_SHOW) instanceof KrollFunction) {
-//	    				onShow = (KrollFunction) params.get(Defaults.CALLBACK_ON_SHOW);
-//	    			}
-//	    		}
-            }
-        })
-        .onHide(new ViewTooltip.ListenerHide() {
-            @Override
-            public void onHide(View view) {
-
-			}
-        })
+		.onDisplay(view -> {
+			Activity activity = TiApplication.getAppCurrentActivity();
+			ViewGroup.MarginLayoutParams layoutParams = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
+			layoutParams.leftMargin = 20;
+			layoutParams.rightMargin = 20;
+			view.setLayoutParams(layoutParams);
+		})
         .show();
 	}
 }
-

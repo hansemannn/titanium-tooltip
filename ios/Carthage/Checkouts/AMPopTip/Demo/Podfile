@@ -1,0 +1,19 @@
+platform :ios, '10.0'
+
+inhibit_all_warnings!
+
+target 'PopTip Demo' do
+  use_frameworks!
+  pod 'AMPopTip', path: '../'
+  
+  target 'PopTip Extension' do
+  end
+
+  target 'PopTip DemoTests' do
+    inherit! :search_paths
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'Nimble-Snapshots'
+  end
+
+end

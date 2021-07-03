@@ -1,3 +1,7 @@
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
 dependencies {
-    implementation 'com.github.florent37:viewtooltip:1.2.2'
+    implementation 'com.github.hansemannn:viewtooltip:1.2.2'
 }

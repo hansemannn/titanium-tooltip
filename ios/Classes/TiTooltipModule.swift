@@ -17,6 +17,8 @@ class TiTooltipModule: TiModule {
   @objc let TOOLTIP_DIRECTION_DOWN = 1
   @objc let TOOLTIP_DIRECTION_LEFT = 2
   @objc let TOOLTIP_DIRECTION_RIGHT = 3
+  
+  private var popTip: PopTip?
 
   func moduleGUID() -> String {
     return "8f724211-0b31-42ed-bf35-690517eed7f3"
@@ -38,7 +40,8 @@ class TiTooltipModule: TiModule {
     let bounce = params["bounce"] as? Float ?? 0.0
     let shouldShowMask = params["shouldShowMask"] as? Bool ?? false
 
-    let popTip = PopTip()
+    popTip = PopTip()
+    guard let popTip = popTip else { return }
 
     popTip.padding = 10.0
     popTip.offset = 5.0
@@ -72,6 +75,13 @@ class TiTooltipModule: TiModule {
       let rect = sourceViewProxy.view.convert(sourceViewProxy.view.bounds, to: topMostView)
 
       popTip.show(text: title, direction: self._tooltipDirection(from: direction), maxWidth: 200, in: topMostView, from: rect)
+    }
+  }
+  
+  @objc(hideActiveTooltip:)
+  public func hideActiveTooltip(unused: Any?) {
+    if let popTip = popTip, popTip.isVisible {
+      popTip.hide()
     }
   }
   

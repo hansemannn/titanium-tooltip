@@ -27,14 +27,13 @@ import com.github.florent37.viewtooltip.ViewTooltip;
 
 @Kroll.module(name="TitaniumTooltip", id="ti.tooltip")
 public class TitaniumTooltipModule extends KrollModule {
-	// Standard Debugging variables
-	private static final String LCAT = "TitaniumTooltipModule";
-	private static final boolean DBG = TiConfig.LOGD;
 
 	@Kroll.constant public static final int TOOLTIP_DIRECTION_UP = 0;
 	@Kroll.constant public static final int TOOLTIP_DIRECTION_DOWN = 1;
 	@Kroll.constant public static final int TOOLTIP_DIRECTION_LEFT = 2;
 	@Kroll.constant public static final int TOOLTIP_DIRECTION_RIGHT = 3;
+
+	private ViewTooltip activeTooltip = null;
 	
 	private ViewTooltip.Position getDirection(int direction) {
 		switch (direction) {
@@ -62,7 +61,7 @@ public class TitaniumTooltipModule extends KrollModule {
 		String title = params.optString(Defaults.PARAMS_TITLE, "");
 		int padding = params.optInt(Defaults.PARAMS_PADDING, Defaults.Values.PADDING);
 
-		ViewTooltip.on(TiApplication.getInstance().getCurrentActivity(), sourceView.getOrCreateView().getNativeView())
+		activeTooltip = ViewTooltip.on(TiApplication.getInstance().getCurrentActivity(), sourceView.getOrCreateView().getNativeView())
 		.text(title)
 		.clickToHide(true)
 		.autoHide(false, 2000)
@@ -75,13 +74,20 @@ public class TitaniumTooltipModule extends KrollModule {
         .arrowWidth( params.optInt(Defaults.PARAMS_ARROW_WIDTH, Defaults.Values.ARROW_WIDTH) )
         .arrowHeight( params.optInt(Defaults.PARAMS_ARROW_HEIGHT, Defaults.Values.ARROW_HEIGHT) )
         .distanceWithView( params.optInt(Defaults.PARAMS_ARROW_MARGIN, Defaults.Values.ARROW_MARGIN) )
-		.onDisplay(view -> {
-			Activity activity = TiApplication.getAppCurrentActivity();
-			ViewGroup.MarginLayoutParams layoutParams = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
-			layoutParams.leftMargin = 20;
-			layoutParams.rightMargin = 20;
-			view.setLayoutParams(layoutParams);
-		})
-        .show();
+		.onHide(new ViewTooltip.ListenerHide() {
+			@Override
+			public void onHide(View view) {
+				activeTooltip = null;
+			}
+		});
+
+		activeTooltip.show();
+	}
+
+	@Kroll.method
+	public void hideActiveTooltip() {
+		if (activeTooltip != null) {
+			activeTooltip.close();
+		}
 	}
 }

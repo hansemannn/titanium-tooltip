@@ -73,7 +73,7 @@ class TiTooltipModule: TiModule {
 
     if let onClickCallback = onClick {
       popTip.tapHandler = { _ in
-        onClickCallback.callAsync([["success": true]], thisObject: self)
+        onClickCallback.call([["success": true]], thisObject: self)
       }
     }
 

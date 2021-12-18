@@ -38,6 +38,7 @@ class TiTooltipModule: TiModule {
     let textColor = params["textColor"];
     let direction = params["direction"] as? Int ?? 0
     let bounce = params["bounce"] as? Float ?? 0.0
+    let onClick = params["onClick"] as? KrollCallback
     let shouldShowMask = params["shouldShowMask"] as? Bool ?? false
 
     popTip = PopTip()
@@ -69,7 +70,13 @@ class TiTooltipModule: TiModule {
     if bounce > 0 {
       popTip.actionAnimation = .bounce(CGFloat(bounce))
     }
-    
+
+    if let onClickCallback = onClick {
+      popTip.tapHandler = { _ in
+        onClickCallback.callAsync([["success": true]], thisObject: self)
+      }
+    }
+
     DispatchQueue.main.async {
       let topMostView = TiApp().topMostView()!
       let rect = sourceViewProxy.view.convert(sourceViewProxy.view.bounds, to: topMostView)

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AMPopTip-Swift.h</key>
 		<data>
-		m7viG5RWgFcMeoF02+uo+n05Kbw=
+		e1+vRFmt7ZnYA/oO3qVgrtxYf10=
 		</data>
 		<key>Headers/AMPopTip-umbrella.h</key>
 		<data>
@@ -14,79 +14,79 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9nLqwpiDoMzpN1UcbuzEinvHRi8=
+		EiRjrIQj0duGEr0m30A2qZwqoyM=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		SvBWUNazYrpIkfAwMhES8N0+Xcg=
+		sioJ69KI65yzbI/wly3Db8rCxMw=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		SvBWUNazYrpIkfAwMhES8N0+Xcg=
+		sioJ69KI65yzbI/wly3Db8rCxMw=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		xSrL+vaRkipaO7HSyl8LC9J8e40=
+		Np3MJbsvRb43RpDGx2vXWZK4Hig=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/Project/i386.swiftsourceinfo</key>
 		<data>
-		xSrL+vaRkipaO7HSyl8LC9J8e40=
+		Np3MJbsvRb43RpDGx2vXWZK4Hig=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		vEJdAqE8aVOuT8zNfgG6u9bht0I=
+		DCuhoWIUEprMkZ9jddVl8W2LvYU=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		vEJdAqE8aVOuT8zNfgG6u9bht0I=
+		DCuhoWIUEprMkZ9jddVl8W2LvYU=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HZ49XBl0cabUGqK6Z7rx8nglMN0=
+		Z3Tdd1/R+ymJGhgippKrFTfyIEE=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GD7bVa263dhLG3hPbn5IxNkX3tY=
+		w9e2BwFzYenNeyPfqkiK2iymuM0=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		HZ49XBl0cabUGqK6Z7rx8nglMN0=
+		Z3Tdd1/R+ymJGhgippKrFTfyIEE=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		GD7bVa263dhLG3hPbn5IxNkX3tY=
+		w9e2BwFzYenNeyPfqkiK2iymuM0=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		rvR+UzNgtJSiXQpKuslGphyiXvg=
+		TPlEM/Z8JQBJx5INVAaZa5xJLyE=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6SB7+WY9cfeqnGS6iMxNJHYL4VQ=
+		PBnby8KllHoGwTF0lau1yJxNOLw=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/i386.swiftdoc</key>
 		<data>
-		rvR+UzNgtJSiXQpKuslGphyiXvg=
+		TPlEM/Z8JQBJx5INVAaZa5xJLyE=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/i386.swiftmodule</key>
 		<data>
-		6SB7+WY9cfeqnGS6iMxNJHYL4VQ=
+		PBnby8KllHoGwTF0lau1yJxNOLw=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		I5Jrmued/Wl5z9uJG5nufw66UcY=
+		aHfVTwvquB1MzXJuhtnyqf0ehEM=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VXNXi2hDYnqkclspEJbuhUtKEOE=
+		rKTljh+7pHGiZco3w1ajw1cJv8Y=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		I5Jrmued/Wl5z9uJG5nufw66UcY=
+		aHfVTwvquB1MzXJuhtnyqf0ehEM=
 		</data>
 		<key>Modules/AMPopTip.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		VXNXi2hDYnqkclspEJbuhUtKEOE=
+		rKTljh+7pHGiZco3w1ajw1cJv8Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,11 +99,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m7viG5RWgFcMeoF02+uo+n05Kbw=
+			e1+vRFmt7ZnYA/oO3qVgrtxYf10=
 			</data>
 			<key>hash2</key>
 			<data>
-			f1rOpEnZBSd7iJO61hNMsqiiB349DssCx57tyzBzgPM=
+			UicjF9LIbZZccdMt5Tt03wM2U1effCer64qI0ZP3ZXA=
 			</data>
 		</dict>
 		<key>Headers/AMPopTip-umbrella.h</key>
@@ -121,198 +121,198 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SvBWUNazYrpIkfAwMhES8N0+Xcg=
+			sioJ69KI65yzbI/wly3Db8rCxMw=
 			</data>
 			<key>hash2</key>
 			<data>
-			UP+/+oU23guBtFBIDQPGiXEHmV2ltkFu56qAm8L4Vcw=
+			xZwGgutScR9CCi+KciB0L5lOm1kgt4ERVUHnp5knBbE=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SvBWUNazYrpIkfAwMhES8N0+Xcg=
+			sioJ69KI65yzbI/wly3Db8rCxMw=
 			</data>
 			<key>hash2</key>
 			<data>
-			UP+/+oU23guBtFBIDQPGiXEHmV2ltkFu56qAm8L4Vcw=
+			xZwGgutScR9CCi+KciB0L5lOm1kgt4ERVUHnp5knBbE=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xSrL+vaRkipaO7HSyl8LC9J8e40=
+			Np3MJbsvRb43RpDGx2vXWZK4Hig=
 			</data>
 			<key>hash2</key>
 			<data>
-			FoXZAQN9buYc/X++yv76OCdO9idd5L2DOFCPQY81e30=
+			JdYtHa05KQ5ioVreMTwyfpmM1kgHBKEAMVIAeai0+T4=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/Project/i386.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xSrL+vaRkipaO7HSyl8LC9J8e40=
+			Np3MJbsvRb43RpDGx2vXWZK4Hig=
 			</data>
 			<key>hash2</key>
 			<data>
-			FoXZAQN9buYc/X++yv76OCdO9idd5L2DOFCPQY81e30=
+			JdYtHa05KQ5ioVreMTwyfpmM1kgHBKEAMVIAeai0+T4=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vEJdAqE8aVOuT8zNfgG6u9bht0I=
+			DCuhoWIUEprMkZ9jddVl8W2LvYU=
 			</data>
 			<key>hash2</key>
 			<data>
-			dNAjg+FZ53lhtvuIRzM6N+ceCJoq8FqL1xx30WDdyMw=
+			fvke71dwa+ycfcOBN571P3r1rSHkeNea0eAdcFo858k=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vEJdAqE8aVOuT8zNfgG6u9bht0I=
+			DCuhoWIUEprMkZ9jddVl8W2LvYU=
 			</data>
 			<key>hash2</key>
 			<data>
-			dNAjg+FZ53lhtvuIRzM6N+ceCJoq8FqL1xx30WDdyMw=
+			fvke71dwa+ycfcOBN571P3r1rSHkeNea0eAdcFo858k=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HZ49XBl0cabUGqK6Z7rx8nglMN0=
+			Z3Tdd1/R+ymJGhgippKrFTfyIEE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jASktMzGqcT78Y57FMzumYwJ2FyKNYS0ThmzIL61aag=
+			gZ6jDy/9JE5VFlAXvXzuG36xFOKmkDlzIKNyrBlzUQY=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GD7bVa263dhLG3hPbn5IxNkX3tY=
+			w9e2BwFzYenNeyPfqkiK2iymuM0=
 			</data>
 			<key>hash2</key>
 			<data>
-			yYrJ9uFpOjt5I07/GZYKxRFBOBJ+0V3JEAG3+d4Tvvk=
+			YihOrWP0v3ca4FqERPsKuof6W1olgHaIpIp9HZxrinE=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HZ49XBl0cabUGqK6Z7rx8nglMN0=
+			Z3Tdd1/R+ymJGhgippKrFTfyIEE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jASktMzGqcT78Y57FMzumYwJ2FyKNYS0ThmzIL61aag=
+			gZ6jDy/9JE5VFlAXvXzuG36xFOKmkDlzIKNyrBlzUQY=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GD7bVa263dhLG3hPbn5IxNkX3tY=
+			w9e2BwFzYenNeyPfqkiK2iymuM0=
 			</data>
 			<key>hash2</key>
 			<data>
-			yYrJ9uFpOjt5I07/GZYKxRFBOBJ+0V3JEAG3+d4Tvvk=
+			YihOrWP0v3ca4FqERPsKuof6W1olgHaIpIp9HZxrinE=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rvR+UzNgtJSiXQpKuslGphyiXvg=
+			TPlEM/Z8JQBJx5INVAaZa5xJLyE=
 			</data>
 			<key>hash2</key>
 			<data>
-			92rN1GOR7p5JPo+kfAVnLfL8EBQ04vHHJgHM5iZe6EU=
+			Zcwt7isHKAIw/RzDEe2PAEWDzrCkE0Xd5GLXTuTmO7U=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6SB7+WY9cfeqnGS6iMxNJHYL4VQ=
+			PBnby8KllHoGwTF0lau1yJxNOLw=
 			</data>
 			<key>hash2</key>
 			<data>
-			TZKWNWJTUbEKgoKK5bABDKPAJU/eBLQ79blQzeFEkkc=
+			ux1yFrZ8q5ftnoEEauERo0g3NoD4ze+BVjhoHD9D1Mk=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rvR+UzNgtJSiXQpKuslGphyiXvg=
+			TPlEM/Z8JQBJx5INVAaZa5xJLyE=
 			</data>
 			<key>hash2</key>
 			<data>
-			92rN1GOR7p5JPo+kfAVnLfL8EBQ04vHHJgHM5iZe6EU=
+			Zcwt7isHKAIw/RzDEe2PAEWDzrCkE0Xd5GLXTuTmO7U=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6SB7+WY9cfeqnGS6iMxNJHYL4VQ=
+			PBnby8KllHoGwTF0lau1yJxNOLw=
 			</data>
 			<key>hash2</key>
 			<data>
-			TZKWNWJTUbEKgoKK5bABDKPAJU/eBLQ79blQzeFEkkc=
+			ux1yFrZ8q5ftnoEEauERo0g3NoD4ze+BVjhoHD9D1Mk=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I5Jrmued/Wl5z9uJG5nufw66UcY=
+			aHfVTwvquB1MzXJuhtnyqf0ehEM=
 			</data>
 			<key>hash2</key>
 			<data>
-			NyNn7d3oG2GIlA8la33fVSMDbt77FfKDsOaIR3pKFLk=
+			RCvs4yHEFVG30l6/O66M4glwQPhZv667VEBI632dfro=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VXNXi2hDYnqkclspEJbuhUtKEOE=
+			rKTljh+7pHGiZco3w1ajw1cJv8Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			qUjwxSB+QQJzd3C/wQWqOulSoK51PdJ72YMjsLWnnsg=
+			0Oh/DUJ2wLDbNIzTSdqmaMArVIQey9x2twNIUMEc8aM=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I5Jrmued/Wl5z9uJG5nufw66UcY=
+			aHfVTwvquB1MzXJuhtnyqf0ehEM=
 			</data>
 			<key>hash2</key>
 			<data>
-			NyNn7d3oG2GIlA8la33fVSMDbt77FfKDsOaIR3pKFLk=
+			RCvs4yHEFVG30l6/O66M4glwQPhZv667VEBI632dfro=
 			</data>
 		</dict>
 		<key>Modules/AMPopTip.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VXNXi2hDYnqkclspEJbuhUtKEOE=
+			rKTljh+7pHGiZco3w1ajw1cJv8Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			qUjwxSB+QQJzd3C/wQWqOulSoK51PdJ72YMjsLWnnsg=
+			0Oh/DUJ2wLDbNIzTSdqmaMArVIQey9x2twNIUMEc8aM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A2594AC266D2A3200309D71 /* TitaniumKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2594AB266D2A3200309D71 /* TitaniumKit.xcframework */; };
 		3A2594AE266D2A8300309D71 /* AMPopTip.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2594AD266D2A8300309D71 /* AMPopTip.xcframework */; };
+		3A7BBE0A276E43F1003308A5 /* TitaniumKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7BBE09276E43F1003308A5 /* TitaniumKit.xcframework */; };
 		DB34CDE0207B998A005F8E8C /* TiTooltipModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34CDDE207B998A005F8E8C /* TiTooltipModuleAssets.m */; };
 		DB34CDE1207B998A005F8E8C /* TiTooltipModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = DB34CDDF207B998A005F8E8C /* TiTooltipModuleAssets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB34CDE6207B9EBD005F8E8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB34CDE5207B9EBD005F8E8C /* Foundation.framework */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A2594AB266D2A3200309D71 /* TitaniumKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TitaniumKit.xcframework; path = "../../../../../Library/Application Support/Titanium/mobilesdk/osx/9.3.2.GA/iphone/Frameworks/TitaniumKit.xcframework"; sourceTree = "<group>"; };
 		3A2594AD266D2A8300309D71 /* AMPopTip.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AMPopTip.xcframework; path = platform/AMPopTip.xcframework; sourceTree = "<group>"; };
+		3A7BBE09276E43F1003308A5 /* TitaniumKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TitaniumKit.xcframework; path = "../../../../Library/Application Support/Titanium/mobilesdk/osx/10.1.1.GA/iphone/Frameworks/TitaniumKit.xcframework"; sourceTree = "<group>"; };
 		DB34CDDE207B998A005F8E8C /* TiTooltipModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiTooltipModuleAssets.m; path = Classes/TiTooltipModuleAssets.m; sourceTree = SOURCE_ROOT; };
 		DB34CDDF207B998A005F8E8C /* TiTooltipModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiTooltipModuleAssets.h; path = Classes/TiTooltipModuleAssets.h; sourceTree = SOURCE_ROOT; };
 		DB34CDE5207B9EBD005F8E8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2594AC266D2A3200309D71 /* TitaniumKit.xcframework in Frameworks */,
+				3A7BBE0A276E43F1003308A5 /* TitaniumKit.xcframework in Frameworks */,
 				3A2594AE266D2A8300309D71 /* AMPopTip.xcframework in Frameworks */,
 				DB34CDE6207B9EBD005F8E8C /* Foundation.framework in Frameworks */,
 			);
@@ -69,7 +69,7 @@
 		DB34CDE2207B9D6A005F8E8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3A2594AB266D2A3200309D71 /* TitaniumKit.xcframework */,
+				3A7BBE09276E43F1003308A5 /* TitaniumKit.xcframework */,
 				3A2594AD266D2A8300309D71 /* AMPopTip.xcframework */,
 				DB34CDE5207B9EBD005F8E8C /* Foundation.framework */,
 			);
@@ -143,7 +143,7 @@
 		DB52E2211E9CCD7000AAAEE0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					DB52E2291E9CCD7000AAAEE0 = {
 						CreatedOnToolsVersion = 8.3;

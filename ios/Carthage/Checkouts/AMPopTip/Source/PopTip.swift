@@ -7,7 +7,9 @@
 //
 
 import UIKit
-#if canImport(SwiftUI) && canImport(Combine)
+// NOTE: workaround for an Xcode 13 compile issue
+// #if canImport(SwiftUI) && canImport(Combine)
+#if !(os(iOS) && (arch(i386) || arch(arm)))
 import SwiftUI
 #endif
 
@@ -644,7 +646,8 @@ open class PopTip: UIView {
     show(duration: duration)
   }
 
-#if canImport(SwiftUI) && canImport(Combine)
+// #if canImport(SwiftUI) && canImport(Combine)
+#if !(os(iOS) && (arch(i386) || arch(arm)))
   /// Shows an animated poptip in a given view, from a given rectangle. The property `isVisible` will be `true` as soon as the poptip is added to the given view.
   ///
   /// - Parameters:

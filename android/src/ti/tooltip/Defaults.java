@@ -7,6 +7,8 @@ public class Defaults {
 	public static final String PARAMS_TITLE = "title";
 	public static final String PARAMS_TEXT_COLOR = "textColor";
 	public static final String PARAMS_SHADOW_COLOR = "shadowColor";
+	public static final String PARAMS_BORDER_COLOR = "borderColor";
+	public static final String PARAMS_BORDER_WIDTH = "borderWidth";
 	public static final String PARAMS_BACKGROUND_COLOR = "backgroundColor";
 	public static final String PARAMS_BORDER_RADIUS = "borderRadius";
 	public static final String PARAMS_ARROW_WIDTH = "arrowWidth";
@@ -21,7 +23,8 @@ public class Defaults {
 		public static final boolean AUTO_HIDE = true;
 		public static final int DIRECTION = 0;
 		public static final int PADDING = 20;
-		public static final int BORDER_RADIUS = 40;
+		public static final int BORDER_WIDTH = 1;
+		public static final int BORDER_RADIUS = 30;
 		public static final int ARROW_WIDTH = 20;
 		public static final int ARROW_HEIGHT = 20;
 		public static final int ARROW_MARGIN = 10;

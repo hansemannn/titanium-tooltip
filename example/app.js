@@ -1,11 +1,20 @@
-var win = Ti.UI.createWindow({
+import Tooltips from 'ti.tooltip';
+
+const window = Ti.UI.createWindow({
     backgroundColor: '#fff'
 });
-var Tooltip = require('ti.tooltip');
-var btn = Ti.UI.createButton({ right: 10, top: 200, width: 50, height: 50, backgroundColor: '#333', title: 'Test', color: '#fff' });
+
+const btn = Ti.UI.createButton({
+    top: 200,
+    width: 50,
+    height: 50,
+    backgroundColor: '#333',
+    title: 'Show tooltip!',
+    color: '#fff'
+});
 
 btn.addEventListener('click', () => {
-    Tooltip.show({
+    Tooltips.show({
         title: 'This is a dummy text line 1.This is a dummy text line 2.',
         backgroundColor: '#61c494',
         borderRadius: 40,
@@ -13,11 +22,11 @@ btn.addEventListener('click', () => {
         arrowHeight: 24,
         arrowMargin: 10,
         textColor: '#fff',
-        container: $.win,
-        sourceView: $.btn,
-        direction: Tooltip.TOOLTIP_DIRECTION_UP
+        container: win,
+        sourceView: btn,
+        direction: Tooltips.TOOLTIP_DIRECTION_UP
     })
 });
-win.add(btn);
 
-win.open();
+window.add(btn);
+window.open();

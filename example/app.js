@@ -29,8 +29,8 @@ btn.addEventListener('click', () => {
         sourceView: btn,
         direction: Tooltips.TOOLTIP_DIRECTION_UP,
         onClick: () => {
-        alert('Tooltip tapped!');
-    }
+            alert('Tooltip tapped!');
+        }
     })
 });
 

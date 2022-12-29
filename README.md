@@ -5,6 +5,14 @@ Use the native `AMPopTip` (iOS) and `ViewTooltip` (Android) library to display t
 ## Requirements
 
 - [x] Titanium SDK 9.2.0+
+- [x] Android: Add the following to your `[app]/platform/android/build.gradle`:
+```gradle
+allprojects {
+  repositories {
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
 
 ## APIs
 

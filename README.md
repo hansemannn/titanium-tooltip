@@ -34,7 +34,7 @@ const params = {
     backgroundColor: '#ffffff',
     textColor: '#000000',
     borderRadius: 15,
-    borderColor: '#ff0000'
+    borderColor: '#ff0000',
     borderWidth: 2,
     padding: 10,
     arrowMargin: 0,

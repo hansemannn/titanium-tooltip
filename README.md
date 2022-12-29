@@ -25,25 +25,25 @@ The following constants are used for the `direction` property:
 ## Example
 
 ```js
-  import Tooltips from 'ti.tooltip';
+import Tooltips from 'ti.tooltip';
 
-	const params = {
-		sourceView: $.view,
-		direction: Tooltips.TOOLTIP_DIRECTION_UP,
-		title: 'Hello world',
-		backgroundColor: '#ffffff',
-		textColor: '#000000',
-		borderRadius: 15,
-		borderColor: '#ff0000'
-		borderWidth: 2,
-		padding: 10,
-		arrowMargin: 0,
+const params = {
+    sourceView: $.view,
+    direction: Tooltips.TOOLTIP_DIRECTION_UP,
+    title: 'Hello world',
+    backgroundColor: '#ffffff',
+    textColor: '#000000',
+    borderRadius: 15,
+    borderColor: '#ff0000'
+    borderWidth: 2,
+    padding: 10,
+    arrowMargin: 0,
     onClick: () => {
-      alert('Tooltip tapped!');
+        alert('Tooltip tapped!');
     }
-	};
+};
 
-	Tooltips.show(params);
+Tooltips.show(params);
 ```
 
 ## Authors

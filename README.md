@@ -36,6 +36,7 @@ The following constants are used for the `direction` property:
 import Tooltips from 'ti.tooltip';
 
 const params = {
+    container: $.win,
     sourceView: $.view,
     direction: Tooltips.TOOLTIP_DIRECTION_UP,
     title: 'Hello world',
@@ -46,6 +47,8 @@ const params = {
     borderWidth: 2,
     padding: 10,
     arrowMargin: 0,
+    arrowWidth: 20,
+    arrowHeight: 24,
     onClick: () => {
         alert('Tooltip tapped!');
     }
